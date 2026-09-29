@@ -166,6 +166,7 @@ img {
     color: white;
     border-radius: 50px;
     font-weight: 600;
+    border: 2px solid var(--accent-color);
     box-shadow: 0 4px 14px 0 rgba(217, 119, 6, 0.39);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -173,6 +174,28 @@ img {
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px 0 rgba(217, 119, 6, 0.39);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    color: white;
+    box-shadow: none;
+}
+
+.btn-outline:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 14px 0 rgba(217, 119, 6, 0.39);
+    transform: translateY(-2px);
+    color: white;
+}
+
+.hero-btn-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* PAGE HEADERS */
